@@ -1,0 +1,64 @@
+algoritmo Ex7;
+// Síntese
+//  Objetivo:  Receber o sexo do funcionário, número de matrícula, número de horas trabalhadas, o valor que recebe por hora e calcular o salário.
+//  Entrada :  Matricula, Sexo, Horas Trablhadas, Valor da hora de trabalho
+//  Saída   :  Matricula, Sexo, Horas Trablhadas, Valor da hora de trabalho e salário
+
+principal
+	// Declarações
+	inteiro matricula,sexo, validado;
+	real horastrabalhadas, valorhora, salario;
+	texto sexos;
+
+	// Código
+	escreval("Insira a matricula do Funcionário: ");
+	leia(matricula);
+
+	escreval("Insira o sexo do Funcionário: ");
+	escreval("1. Masculino");
+	escreval("2. Feminino");
+	escreval("3. Irrelevante");
+	leia(sexo);
+
+	se (sexo == 1) entao
+		sexos = "Masculino";
+		validado = 1;
+	senao
+		se (sexo == 2) entao
+			sexos = "Feminino";
+			validado = 1;
+		senao
+			se (sexo == 3) entao
+				sexos = "Irrelevante";
+				validado = 1;
+			senao
+				se (sexo <= 0) entao
+					escreval("Informe seu sexo de maneira correta");
+					validado = 0;
+				senao
+					se (sexo >= 0) entao
+						escreval("Informe seu sexo de maneira correta");
+						validado = 0;
+					fimSe
+				fimSe
+			
+			fimSe
+		fimSe
+	fimSe
+
+	se (validado == 1) entao
+		escreval("Insira horas trabalhadas: ");
+		leia(horastrabalhadas);
+
+		escreval("Insira o valor da hora de trabalho: ");
+		leia(valorhora);
+
+		salario = valorhora * horastrabalhadas;
+
+		escreval("Matrícula: " + matricula);
+		escreval("Sexo: " + sexos);
+		escreval("Salário: R$" + salario);
+	fimSe
+	
+
+fimPrincipal

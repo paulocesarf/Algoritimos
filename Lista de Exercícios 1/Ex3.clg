@@ -1,0 +1,24 @@
+algoritmo Ex3;
+// Síntese
+//  Objetivo:  Calcular média aritmética de 3 números quaisquer
+//  Entrada :  3 Números
+//  Saída   :  Média Aritmética
+
+
+principal
+	// Declarações
+    real media, n1, n2, n3;
+    
+	// Código
+	escreva("Informe o primeiro valor: ");
+	leia(n1);
+	escreva("Informe o segundo valor: ");
+	leia(n2);
+	escreva("Informe o terceiro valor: ");
+	leia(n3);
+
+	media = (n1 + n2 + n3) / 3;
+
+	escreva("A média aritmética dos valores informados é igual a:" + media);
+
+fimPrincipal

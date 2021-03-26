@@ -1,0 +1,27 @@
+algoritmo Ex5;
+// Síntese
+//  Objetivo:  Auxiliar um construtor a descobrir a quantidade de rolos de 50m e a quantidade de metros avulsos de fios que ele precisa adquirir
+//  Entrada :  Quantidade total de metros de fio
+//  Saída   :  Quantidade de rolos (50m) serão necessários
+
+
+principal
+	// Declarações
+	inteiro rolo, fio, totalrolo;
+	real metroavulso;
+	
+	// Código
+	escreva("Quantos fios em metros possui:");
+	leia(fio);
+
+	rolo = fio / 50; 
+	metroavulso = fio % 50;
+
+	se (metroavulso >= 1) entao
+		totalrolo = rolo + 1;
+	senao
+		totalrolo = rolo;
+	fimSe
+
+	escreva("Serão necessários " + totalrolo + " rolos.");
+fimPrincipal

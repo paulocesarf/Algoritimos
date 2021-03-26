@@ -1,0 +1,24 @@
+algoritmo Ex1;
+// Síntese
+//  Objetivo:  Ler um número inteiro de horas e apresentar o valor correspondente em minutos e segundos. 
+//  Entrada : Horário (Inteiro)
+//  Saída   : Quantidade de minutos e segundos da hora
+
+
+principal
+	// Declarações
+	inteiro hora, minuto, segundo;
+
+	// Código
+	escreva("Por favor, informe o horário");
+	escreval(" "); // Pula Linha
+	leia(hora);
+
+	minuto = hora * 60;
+	segundo = minuto * 60;
+
+	escreva("Minutos: " + minuto);
+	escreval(" "); // Pula Linha
+	escreval("Segundos: " + segundo); 
+
+fimPrincipal

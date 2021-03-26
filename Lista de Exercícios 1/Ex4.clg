@@ -1,0 +1,25 @@
+algoritmo Ex4;
+// Síntese
+//  Objetivo:  Calcular divisáo e fornecer o resto e o quociente da divisão do primeiro pelo segundo valor
+//  Entrada :  Apresentar o dividendo e o divisor
+//  Saída   :  Apresentar o quociente e o resto da divisão
+
+
+principal
+	// Declarações
+	inteiro divisor, dividendo, restante, quociente;
+	
+	// Código
+
+	escreva("Insire o dividendo: ");
+	leia(dividendo);
+	
+	escreva("Insire o divisor: ");
+	leia(divisor);
+	
+	restante = dividendo mod divisor;
+	quociente = dividendo / divisor;
+	
+	escreva("O quociente é: " + quociente + " e o que sobrou foi: " + restante);
+
+fimPrincipal

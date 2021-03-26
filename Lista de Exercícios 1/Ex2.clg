@@ -1,0 +1,21 @@
+algoritmo Ex2;
+// Síntese
+//  Objetivo:  Calcular área de um círculo cujo raio é fornecido pelo usuário
+//  Entrada :  Raio
+//  Saída   :  Área
+//  Use     :  área = 3.14 x raio2
+
+
+principal
+	// Declarações
+    real area, raio;
+    
+	// Código
+	escreva("Por favor, insira o raio do círculo:");
+	leia(raio);
+
+	area = 3.14 * raio * raio;
+
+	escreva("A área do seu círculo mede: " + area + "cm.");
+
+fimPrincipal

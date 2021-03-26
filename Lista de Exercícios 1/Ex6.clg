@@ -1,0 +1,33 @@
+algoritmo Ex6;
+// Síntese
+//  Objetivo:  Ler 2 valores A e B, que correspondem a 2 notas de um aluno e calcular a média, sabendo que a nota A tem peso 3.5 e a nota B tem peso 7.5 (A soma dos pesos portanto é 11) 
+//  Entrada :  Nota A e B
+//  Saída   :  Média das notas
+
+
+principal
+	// Declarações
+	real a, b, media;
+	
+	// Código
+	escreva("Insira a Nota da prova A com peso 3.5: ");
+	leia(a);
+
+	se (a > 10) entao
+		escreva("Deixa de ser bobo, nem da pra tirar mais que 10");
+	senao
+		escreva("Insira a Nota da prova B com peso 7.5: ");
+		leia(b);
+		se (b > 10) entao
+			escreva("Deixa de ser bobo, nem da pra tirar mais que 10");
+		senao
+			a = a * 3.5;
+		    b = b * 7.5;
+		
+			media = (a + b) / 11;
+		
+			escreva("Média: " + media);
+		fimSe
+	fimSe
+	
+fimPrincipal
